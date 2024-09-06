@@ -13,13 +13,13 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 6x1-fraction-partage/*.ipe 6x2-geometrie-quadrillage/*.ipe 4xbb/*.ipe 6x4-geometrie-base/*.ipe)
+FIGSRC = $(wildcard 6x1-fractions/*.ipe 6x2-geometrie-quadrillage/*.ipe 4xbb/*.ipe 6x4-geometrie-base/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-6x1-fraction-partage/%.pdf: 6x1-fraction-partage/%.ipe
+6x1-fractions/%.pdf: 6x1-fractions/%.ipe
 	ipetoipe -pdf $<
 
 6x2-geometrie-quadrillage/%.pdf: 6x2-geometrie-quadrillage/%.ipe
@@ -28,10 +28,10 @@ img: $(FIGOBJ)
 6x4-geometrie-base/%.pdf: 6x4-geometrie-base/%.ipe
 	ipetoipe -pdf $<
 
-1ie:
-	pdflatex 6x1-fraction-partage/6x1-ie.tex
-	pdflatex 6x1-fraction-partage/6x1-ie.tex
-	mv 6x1-ie.pdf '$(PDFDIR)'/6x1-ie.pdf
+1cours:
+	pdflatex 6x1-fractions/6x1-fractions.tex
+	pdflatex 6x1-fractions/6x1-fractions.tex
+	mv 6x1-fractions.pdf '$(PDFDIR)'/6x1-fractions.pdf
 
 2ie:
 	pdflatex 6x2-geometrie-quadrillage/6x2-ie.tex

@@ -50,6 +50,11 @@ img: $(FIGOBJ)
 	pdflatex 5x1-calcul-numerique/5x1-ie.tex
 	mv 5x1-ie.pdf '$(PDFDIR)'/5x1-ie.pdf
 
+1mini:
+	pdflatex 5x1-calcul-numerique/5x1-mini.tex
+	pdflatex 5x1-calcul-numerique/5x1-mini.tex
+	mv 5x1-mini.pdf '$(PDFDIR)'/5x1-mini.pdf
+
 2cours:
 	pdflatex 5x2-probabilite/5x2-cours.tex
 	pdflatex 5x2-probabilite/5x2-cours.tex
