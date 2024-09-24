@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x3-triangles-semblables/*.ipe 4x7-pythagore-1/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe)
+FIGSRC = $(wildcard 4x3-triangles-semblables/*.ipe 4x1-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,8 +22,9 @@ img: $(FIGOBJ)
 4x3-triangles-semblables/%.pdf: 4x3-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
-4x7-pythagore/%.pdf: 4x5-pythagore/%.ipe
+4x1-pythagore/%.pdf: 4x1-pythagore/%.ipe
 	ipetoipe -pdf $<
+
 
 4x8-pythagore-2/%.pdf: 4x8-pythagore-2/%.ipe
 	ipetoipe -pdf $<
@@ -32,11 +33,15 @@ img: $(FIGOBJ)
 	ipetoipe -pdf $<
 
 
-1ie:
-	pdflatex 4x1-nombres-relatifs/4x1-ie.tex
-	pdflatex 4x1-nombres-relatifs/4x1-ie.tex
-	mv 4x1-ie.pdf '$(PDFDIR)'/4x1-ie-relatifs.pdf
+1py:
+	pdflatex 4x1-pythagore/4x1-pythagore.tex
+	pdflatex 4x1-pythagore/4x1-pythagore.tex
+	mv 4x1-pythagore.pdf '$(PDFDIR)'/4x1-pythagore.pdf
 
+1exo:
+	pdflatex 4x1-pythagore/4x1-exo.tex
+	pdflatex 4x1-pythagore/4x1-exo.tex
+	mv 4x1-exo.pdf '$(PDFDIR)'/4x1-exo.pdf
 
 2data:
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
