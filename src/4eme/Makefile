@@ -38,10 +38,15 @@ img: $(FIGOBJ)
 	pdflatex 4x1-pythagore/4x1-pythagore.tex
 	mv 4x1-pythagore.pdf '$(PDFDIR)'/4x1-pythagore.pdf
 
-1exo:
-	pdflatex 4x1-pythagore/4x1-exo.tex
-	pdflatex 4x1-pythagore/4x1-exo.tex
-	mv 4x1-exo.pdf '$(PDFDIR)'/4x1-exo.pdf
+1exo1:
+	pdflatex 4x1-pythagore/4x1-exo1.tex
+	pdflatex 4x1-pythagore/4x1-exo1.tex
+	mv 4x1-exo1.pdf '$(PDFDIR)'/4x1-exo1.pdf
+
+1exo2:
+	pdflatex 4x1-pythagore/4x1-exo2.tex
+	pdflatex 4x1-pythagore/4x1-exo2.tex
+	mv 4x1-exo2.pdf '$(PDFDIR)'/4x1-exo2.pdf
 
 DM1:
 	pdflatex 4xDM/4x1-DM.tex
