@@ -33,6 +33,16 @@ img: $(FIGOBJ)
 	pdflatex 6x1-fractions/6x1-fractions.tex
 	mv 6x1-fractions.pdf '$(PDFDIR)'/6x1-fractions.pdf
 
+1ie:
+	pdflatex 6x1-fractions/6x1-ie.tex
+	pdflatex 6x1-fractions/6x1-ie.tex
+	mv 6x1-ie.pdf '$(PDFDIR)'/6x1-ie.pdf
+
+DM1:
+	pdflatex 6xDM/6x1-DM.tex
+	pdflatex 6xDM/6x1-DM.tex
+	mv 6x1-DM.pdf '$(PDFDIR)'/6x1-DM.pdf
+
 2ie:
 	pdflatex 6x2-geometrie-quadrillage/6x2-ie.tex
 	pdflatex 6x2-geometrie-quadrillage/6x2-ie.tex
