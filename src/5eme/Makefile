@@ -50,6 +50,11 @@ img: $(FIGOBJ)
 	pdflatex 5x1-calcul-numerique/5x1-ie.tex
 	mv 5x1-ie.pdf '$(PDFDIR)'/5x1-ie.pdf
 
+DM1:
+	pdflatex 5xDM/5x1-dm-appolo.tex
+	pdflatex 5xDM/5x1-dm-appolo.tex
+	mv 5x1-dm-appolo.pdf '$(PDFDIR)'/5x1-dm-appolo.pdf
+
 1mini:
 	pdflatex 5x1-calcul-numerique/5x1-mini.tex
 	pdflatex 5x1-calcul-numerique/5x1-mini.tex
