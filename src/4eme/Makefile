@@ -43,6 +43,10 @@ img: $(FIGOBJ)
 	pdflatex 4x1-pythagore/4x1-exo.tex
 	mv 4x1-exo.pdf '$(PDFDIR)'/4x1-exo.pdf
 
+DM1:
+	pdflatex 4xDM/4x1-DM.tex
+	pdflatex 4xDM/4x1-DM.tex
+	mv 4x1-DM.pdf '$(PDFDIR)'/4x1-DM.pdf
 2data:
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
