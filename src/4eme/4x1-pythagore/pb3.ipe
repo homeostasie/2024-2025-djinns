@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20240927004356" modified="D:20241007222027"/>
+<info created="D:20230507182743" modified="D:20241007230350"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -301,7 +301,6 @@ h
 <textsize name="footnote" value="\footnotesize"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="large" value="\large"/>
-<textsize name="script" value="\scriptsize"/>
 <textsize name="small" value="\small"/>
 <textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -313,38 +312,49 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black">
-64 704 m
+<path layer="alpha" stroke="black" fill="lightgray" pen="heavier">
+224 768 m
+224 784 l
+288 784 l
+288 768 l
+h
+</path>
+<path stroke="black" pen="heavier">
+128 768 m
+128 640 l
+384 640 l
+384 768 l
+h
+</path>
+<path stroke="black" pen="heavier">
+192 768 m
 192 704 l
-64 784 l
-64 704 l
+320 704 l
+320 768 l
 h
 </path>
-<path matrix="1 0 0 1 -80 16" stroke="black">
-240 800 m
-320 800 l
-320 640 l
+<path stroke="black" pen="heavier">
+64 768 m
+64 512 l
+448 512 l
+448 768 l
 h
 </path>
-<text transformations="translations" pos="128 752" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text transformations="translations" pos="112 688" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">39</text>
-<text transformations="translations" pos="32 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">19</text>
-<text matrix="1 0 0 1 -80 48" transformations="translations" pos="256 704" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text matrix="1 0 0 1 -80 16" transformations="translations" pos="336 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">35</text>
-<text matrix="1 0 0 1 -80 -16" transformations="translations" pos="272 816" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">15</text>
-<path stroke="black">
-64 704 m
-64 720 l
-80 720 l
-80 704 l
-h
+<path stroke="black" pen="heavier">
+320 512 m
+64 0 0 64 256 512 192 512 a
 </path>
-<path stroke="black">
-240 816 m
-240 800 l
-224 800 l
-224 816 l
-h
+<use name="mark/disk(sx)" pos="96 688" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="320 608" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="272 768" size="large" stroke="black"/>
+<path stroke="black" pen="heavier">
+96 688 m
+272 768 l
+320 608 l
+96 688 l
 </path>
+<text transformations="translations" pos="304 784" stroke="black" type="label" width="60.65" height="11.761" depth="0" valign="baseline" size="LARGE">B : BUT</text>
+<text transformations="translations" pos="336 608" stroke="black" type="label" width="101.639" height="11.761" depth="0" valign="baseline" size="LARGE">V : Vinicius Jr</text>
+<text matrix="1 0 0 1 -8 0" transformations="translations" pos="80 656" stroke="black" type="label" width="87.705" height="11.954" depth="3.35" valign="baseline" size="LARGE">M : MBappé</text>
 </page>
 </ipe>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20240927004356" modified="D:20241007222027"/>
+<info created="D:20221214015425" modified="D:20241007231854"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -301,7 +301,6 @@ h
 <textsize name="footnote" value="\footnotesize"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="large" value="\large"/>
-<textsize name="script" value="\scriptsize"/>
 <textsize name="small" value="\small"/>
 <textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -314,37 +313,48 @@ h
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <path layer="alpha" stroke="black">
-64 704 m
-192 704 l
-64 784 l
-64 704 l
-h
+256 640 m
+128 640 l
 </path>
-<path matrix="1 0 0 1 -80 16" stroke="black">
-240 800 m
-320 800 l
-320 640 l
-h
+<path stroke="black" pen="fat">
+256 768 m
+128 640 l
 </path>
-<text transformations="translations" pos="128 752" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text transformations="translations" pos="112 688" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">39</text>
-<text transformations="translations" pos="32 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">19</text>
-<text matrix="1 0 0 1 -80 48" transformations="translations" pos="256 704" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text matrix="1 0 0 1 -80 16" transformations="translations" pos="336 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">35</text>
-<text matrix="1 0 0 1 -80 -16" transformations="translations" pos="272 816" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">15</text>
+<path stroke="black" arrow="normal/normal" rarrow="normal/normal">
+128 624 m
+256 624 l
+</path>
+<text transformations="translations" pos="176 608" stroke="black" type="label" width="62.985" height="16.934" depth="0" valign="baseline" size="Huge">Douve</text>
 <path stroke="black">
-64 704 m
-64 720 l
-80 720 l
-80 704 l
-h
+256 768 m
+256 776 l
+264 776 l
+264 768 l
+272 768 l
+272 776 l
+280 776 l
+280 768 l
+288 768 l
+288 776 l
+296 776 l
+296 768 l
+288 768 l
 </path>
 <path stroke="black">
-240 816 m
-240 800 l
-224 800 l
-224 816 l
+256 768 m
+256 640 l
+296 640 l
+296 768 l
 h
 </path>
+<text matrix="1 0 0 1 32 16" transformations="translations" pos="272 704" stroke="black" type="label" width="39.524" height="14.116" depth="0" valign="baseline" size="huge">Tour</text>
+<path stroke="black">
+256 640 m
+256 656 l
+240 656 l
+240 640 l
+h
+</path>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="144 720" stroke="black" type="label" width="68.625" height="14.115" depth="4.02" valign="baseline" size="huge">Grappin</text>
 </page>
 </ipe>

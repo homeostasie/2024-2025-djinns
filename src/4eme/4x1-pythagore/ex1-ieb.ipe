@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20240927004356" modified="D:20241007222027"/>
+<info created="D:20240927004356" modified="D:20241007222007"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -327,11 +327,11 @@ h
 h
 </path>
 <text transformations="translations" pos="128 752" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text transformations="translations" pos="112 688" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">39</text>
-<text transformations="translations" pos="32 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">19</text>
+<text transformations="translations" pos="112 688" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">47</text>
+<text transformations="translations" pos="32 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">27</text>
 <text matrix="1 0 0 1 -80 48" transformations="translations" pos="256 704" stroke="black" type="label" width="7.446" height="11.955" depth="0" valign="baseline" size="LARGE">?</text>
-<text matrix="1 0 0 1 -80 16" transformations="translations" pos="336 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">35</text>
-<text matrix="1 0 0 1 -80 -16" transformations="translations" pos="272 816" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">15</text>
+<text matrix="1 0 0 1 -80 16" transformations="translations" pos="336 736" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">42</text>
+<text matrix="1 0 0 1 -80 -16" transformations="translations" pos="272 816" stroke="black" type="label" width="15.791" height="11.097" depth="0" valign="baseline" size="LARGE">22</text>
 <path stroke="black">
 64 704 m
 64 720 l
