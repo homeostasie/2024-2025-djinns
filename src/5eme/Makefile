@@ -52,9 +52,9 @@ img: $(FIGOBJ)
 
 
 DM1:
-	pdflatex 5xDM/5x1-dm-appolo.tex
-	pdflatex 5xDM/5x1-dm-appolo.tex
-	mv 5x1-dm-appolo.pdf '$(PDFDIR)'/5x1-dm-appolo.pdf
+	pdflatex 5xDM/5x1-dm-apollo.tex
+	pdflatex 5xDM/5x1-dm-apollo.tex
+	mv 5x1-dm-apollo.pdf '$(PDFDIR)'/5x1-dm-apollo.pdf
 
 1mini:
 	pdflatex 5x1-calcul-numerique/5x1-mini.tex
@@ -70,6 +70,12 @@ DM1:
 	pdflatex 5x2-inegalite-triangulaire/5x2-ie.tex
 	pdflatex 5x2-inegalite-triangulaire/5x2-ie.tex
 	mv 5x2-ie.pdf '$(PDFDIR)'/5x2-ie.pdf
+
+
+DM2:
+	pdflatex 5xDM/5x2-DM.tex
+	pdflatex 5xDM/5x2-DM.tex
+	mv 5x2-DM.pdf '$(PDFDIR)'/5x2-DM.pdf
 
 3cours:
 	pdflatex 5x3-nombres-relatifs-1-intro/5x3-cours.tex
