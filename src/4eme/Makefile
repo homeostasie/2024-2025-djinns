@@ -58,7 +58,10 @@ DM1:
 	pdflatex 4x1-pythagore/4x1-ie.tex
 	mv 4x1-ie.pdf '$(PDFDIR)'/4x1-ie.pdf
 
-
+DM2:
+	pdflatex 4xDM/4x2-DM.tex
+	pdflatex 4xDM/4x2-DM.tex
+	mv 4x2-DM.pdf '$(PDFDIR)'/4x2-DM.pdf
 
 2data:
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
