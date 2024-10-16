@@ -63,6 +63,12 @@ DM2:
 	pdflatex 4xDM/4x2-DM.tex
 	mv 4x2-DM.pdf '$(PDFDIR)'/4x2-DM.pdf
 
+2ie:
+	pdflatex 4x2-nombres-relatifs/4x2-ie.tex
+	pdflatex 4x2-nombres-relatifs/4x2-ie.tex
+	mv 4x2-ie.pdf '$(PDFDIR)'/4x2-ie.pdf
+
+
 2data:
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
