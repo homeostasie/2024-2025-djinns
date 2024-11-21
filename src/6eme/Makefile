@@ -48,6 +48,10 @@ DM1:
 	pdflatex 6x2-geometrie-quadrillage/6x2-ie.tex
 	mv 6x2-ie.pdf '$(PDFDIR)'/6x2-ie.pdf
 
+3ie:
+	pdflatex 6x3-fractions-2/6x3-ie.tex
+	pdflatex 6x3-fractions-2/6x3-ie.tex
+	mv 6x3-ie.pdf '$(PDFDIR)'/6x3-ie.pdf
 
 4ie:
 	pdflatex 6x4-geometrie-base/6x4-ie.tex
