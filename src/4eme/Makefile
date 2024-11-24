@@ -82,6 +82,11 @@ DM2:
 	pdflatex 4x3-proportionnalite/4x3-ie.tex
 	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie-prop.pdf
 
+4ie:
+	pdflatex 4x4-educfi/4x4-ie.tex
+	pdflatex 4x4-educfi/4x4-ie.tex
+	mv 4x4-ie.pdf '$(PDFDIR)'/4x4-ie-educfi.pdf
+
 6ie:
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
