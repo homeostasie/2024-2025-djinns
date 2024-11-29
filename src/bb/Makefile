@@ -20,9 +20,13 @@ bb1:
 	mv bb-2025.pdf '$(PDFDIR)'/bb-2025.pdf
 
 bb2:
-	latex bb-2025.tex
-	dvipdfm bb-2025.dvi
-	mv bb-2025.pdf '$(PDFDIR)'/bb-2025.pdf
+	latex bb-2025-double.tex
+	dvips bb-2025-double.dvi
+	ps2pdf bb-2025-double.ps
+	mv bb-2025-double.pdf '$(PDFDIR)'/bb-2025-double.pdf
+
+
+
 
 # nettoyage		
 proper:
