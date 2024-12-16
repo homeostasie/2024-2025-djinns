@@ -62,8 +62,8 @@ DM1:
 	mv 6x4-ie.pdf '$(PDFDIR)'/6x4-ie.pdf
 
 5ie:
-	pdflatex 6x5-fractions/6x5-ie.tex
-	pdflatex 6x5-fractions/6x5-ie.tex
+	pdflatex 6x5-fractions-3/6x5-ie.tex
+	pdflatex 6x5-fractions-3/6x5-ie.tex
 	mv 6x5-ie.pdf '$(PDFDIR)'/6x5-ie.pdf
 
 6ie:
