@@ -95,6 +95,19 @@ sem1:
 	pdflatex 4xDM/4x-sem1.tex
 	mv 4x-sem1.pdf '$(PDFDIR)'/4x-sem1.pdf
 
+
+5exo2:
+	pdflatex 4x5-puissances/4x5-exo-1.tex
+	pdflatex 4x5-puissances/4x5-exo-1.tex
+	mv 4x5-exo-1.pdf '$(PDFDIR)'/4x5-exo-1.pdf
+
+
+
+5exo2:
+	pdflatex 4x5-puissances/4x5-exo-2.tex
+	pdflatex 4x5-puissances/4x5-exo-2.tex
+	mv 4x5-exo-2.pdf '$(PDFDIR)'/4x5-exo-2.pdf
+
 6ie:
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
