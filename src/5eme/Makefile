@@ -89,6 +89,10 @@ DM2:
 	pdflatex 5x4-statistiques/5x4-ie.tex
 	mv 5x4-ie.pdf '$(PDFDIR)'/5x4-ie.pdf
 
+5dm:
+	pdflatex 5x5-equations/5x5-dm.tex
+	pdflatex 5x5-equations/5x5-dm.tex
+	mv 5x5-dm.pdf '$(PDFDIR)'/5x5-dm.pdf
 
 # nettoyage		
 proper:
