@@ -25,8 +25,9 @@ bb1d:
 
 
 bb2:
-	pdflatex bb2-2025.tex
-	pdflatex bb2-2025.tex
+	latex bb2-2025.tex
+	dvips bb2-2025.dvi
+	ps2pdf bb2-2025.ps
 	mv bb2-2025.pdf '$(PDFDIR)'/bb2-2025-double.pdf
 
 # nettoyage		

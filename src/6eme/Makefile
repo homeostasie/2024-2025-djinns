@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 6x1-fractions/*.ipe 6x2-geometrie-quadrillage/*.ipe 6x4-symetrie/*.ipe 4xbb/*.ipe 6x4-geometrie-base/*.ipe)
+FIGSRC = $(wildcard 6x1-fractions/*.ipe 6x2-geometrie-quadrillage/*.ipe 6x4-symetrie/*.ipe 4xbb/*.ipe 6x4-geometrie-base/*.ipe 6x7-aires-perimetres/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -30,6 +30,9 @@ img: $(FIGOBJ)
 
 6x4-geometrie-base/%.pdf: 6x4-geometrie-base/%.ipe
 	ipetoipe -pdf $<
+
+6x7-aires-perimetres/%.pdf: 6x7-aires-perimetres/%.ipe
+	ipetoipe -pdf $<	
 
 1cours:
 	pdflatex 6x1-fractions/6x1-fractions.tex
@@ -67,13 +70,13 @@ DM1:
 	mv 6x5-ie.pdf '$(PDFDIR)'/6x5-ie.pdf
 
 6ie:
-	pdflatex 6x6-pourcentage/6x6-ie.tex
-	pdflatex 6x6-pourcentage/6x6-ie.tex
+	pdflatex 6x6-calculs-geo/6x6-ie.tex
+	pdflatex 6x6-calculs-geo/6x6-ie.tex
 	mv 6x6-ie.pdf '$(PDFDIR)'/6x6-ie.pdf
 
 7ie:
-	pdflatex 6x7-calculs/6x7-ie.tex
-	pdflatex 6x7-calculs/6x7-ie.tex
+	pdflatex 6x7-aires-perimetres/6x7-ie.tex
+	pdflatex 6x7-aires-perimetres/6x7-ie.tex
 	mv 6x7-ie.pdf '$(PDFDIR)'/6x7-ie.pdf
 
 8dm:
