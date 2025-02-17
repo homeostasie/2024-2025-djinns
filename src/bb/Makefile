@@ -30,6 +30,12 @@ bb2:
 	ps2pdf bb2-2025.ps
 	mv bb2-2025.pdf '$(PDFDIR)'/bb2-2025-double.pdf
 
+
+bbpro:
+	pdflatex bb2-2025-pro.tex
+	pdflatex bb2-2025-pro.tex
+	mv bb2-2025-pro.pdf '$(PDFDIR)'/bb2-2025-pro.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps

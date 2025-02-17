@@ -9,17 +9,19 @@
 
     \center % Center everything on the page
     
-    \textsc{\LARGE Collège Faubert}\\[2cm] % Name of your university/college
+    \textsc{\LARGE Collège Faubert}\\[1cm] % Name of your university/college
     %\textsc{\Large }\\[0.5cm] % Major heading such as course name
-    \textsc{\large Villefranche-sur-Saône}\\[2cm] % Minor heading such as course title
+    \textsc{\large Villefranche-sur-Saône}\\[0.5cm] % Minor heading such as course title
     
     \horrule{2px}
     
     \vspace{0.5cm}
     
-    { \Huge \bfseries Brevet Blanc}\\[2cm] % Title of your document
-    { \Huge \bfseries Mathématiques}\\[2cm] % Title of your document
-    {\large \bfseries Février - 2025}\\[2cm] 
+    {\Huge \bfseries Brevet Blanc}\\[1cm] % Title of your document
+    {\Huge \bfseries Mathématiques}\\[1cm] % Title of your document
+    {\Huge  \bfseries Série Générale}\\[1cm]
+    {\large \bfseries Février - 2025}\\[1cm] 
+    {\bfseries Durée de l'épreuve : 2h : 100 points}\\[1cm] 
     
     \horrule{2px}
     
@@ -39,15 +41,13 @@
     
     \vspace{0.5cm}
     
-    \textbf{Le sujet est à rendre avec la copie.}
-    
-    \vspace{0.5cm}
-    
     \begin{itemize}
+      \item Les exercices sont indépendants. Toutes les réponses doivent être justifiées (sauf QCM).
       \item L'usage de la calculatrice de type collège est autorisé.
       \item L'usage de tout autre document est interdit. 
-      \item L'ensemble des réponses doivent êtres justifiées.
       \item Toute trace écrite, même incomplète sera prise en compte dans l'évaluation.
+      \item L’annexe page 6 est à rendre avec la copie.
+      \item Le sujet comporte 6 pages.
     \end{itemize}
     
     \vfill 
@@ -55,9 +55,18 @@
     \end{titlepage}
     
 \newpage
-
+\setcounter{page}{2}
 \subsection*{Exercice 1 - 18 points }
+\textbf{Il faut répondre sur la copie et non sur l'énoncé.} Une seule bonne réponse. Pas de perte de points en cas de mauvaise réponse. 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{qcm1-full-1.eps}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{qcm1-full-2.eps}
+\end{figure}
 
 
 \subsection*{Exercice 2 - 20 points }
@@ -84,8 +93,6 @@
   \end{tabularx}
 
 
-
-
 \begin{enumerate}
   \item[1.] 
   \begin{enumerate}
@@ -93,7 +100,7 @@
     \item[b.] Quel résultat obtient-on avec le programme B si on choisit -9 comme nombre de départ ?
   \end{enumerate} 
 
-  \item[2.] On choisit un nombre quelconque x comme nombre de départ.
+  \item[2.] On choisit un nombre quelconque $x$ comme nombre de départ.
   \begin{enumerate}
     \item[a.] Parmi les trois propositions ci-dessous, recopier l'expression qui donne le résultat obtenu par le programme B ?
       
@@ -103,15 +110,14 @@
       $E_3 = x + 2 \times x - 1$ 
     \end{multicols}
 
-    \item[b.] Exprimer en fonction de x le résultat obtenu avec le programme A.
+    \item[b.] Exprimer en fonction de $x$ le résultat obtenu avec le programme A.
   \end{enumerate} 
 
-  \item[3.] Démontrer que, quel que soit le nombre choisi au départ , le résultat du programme A est toujours le double du résultat du programme B.
+  \item[3.] Démontrer que, quel que soit le nombre choisi au départ, le résultat du programme A est toujours le double du résultat du programme B.
 \end{enumerate}
 
-\newpage
-\subsection*{Exercice 3 - 24 points }
 
+\subsection*{Exercice 3 - 24 points }
 
 Voici la série des temps exprimés en secondes, et réalisés par des nageuses lors de la finale du 100 mètres féminin nage libre lors des championnats d'Europe de natation de 2018 :
 
@@ -126,7 +132,7 @@ Voici la série des temps exprimés en secondes, et réalisés par des nageuses 
 \item Quelle est la vitesse moyenne, exprimée en m/s, de la nageuse ayant parcouru les $100$ mètres en $52,93$ secondes ? Arrondir au dixième près.
 \item Comparer moyenne et médiane des temps de cette série.
 
-\medskip
+\newpage
 
 Sur une feuille de calcul, on a reporté le classement des dix premiers pays selon le nombre de médailles d'or lors de ces championnats d'Europe de natation, toutes disciplines confondues :
 
@@ -155,14 +161,13 @@ que la Russie ?
 
 \end{enumerate}
 
-\newpage
 \subsection*{Exercice 4 - 19 points }
 
 \textbf{1\up{re} partie}
 
 \smallskip
 
-\parbox{0.45\linewidth}{\psset{unit=1cm}
+\parbox{0.45\linewidth}{\psset{unit=0.9cm}
 \begin{pspicture}(7.4,3.6)
   %\psgrid
   \psline[linewidth=1.5pt](0,1.3)(5.3,1.3)(7,1.6)(7.4,1.8)
@@ -188,7 +193,7 @@ Elle veut coller une frise en carrelage au niveau de la ligne d'eau.}
 La piscine vue de haut, est représentée à l'échelle par la partie grisée du schéma ci-après.
 
 \begin{center}
-\psset{unit=1cm}
+\psset{unit=0.9cm}
 \begin{pspicture}(10,4.5)
   \pspolygon[linewidth=1.3pt,fillstyle=solid,fillcolor=lightgray](0.5,0.5)(7.5,0.5)(9.1,1.8)(9.1,2.6)(7.5,4)(0.5,4)%HGEDBA
   \psline(7.5,0.5)(9.1,0.5)(9.1,4)(7.5,4)
@@ -219,18 +224,32 @@ La piscine vue de haut, est représentée à l'échelle par la partie grisée du
 
 Calculer la longueur de la frise.
 
-\bigskip
+\newpage
 
 \textbf{2\up{e} partie}
 
 \smallskip
+La personne décide d'installer, au-dessus de la piscine, une grande voile d'ombrage qui se compose de deux parties détachables reliées par une fermeture éclair comme le montre le schéma ci-dessous qui n'est pas à l'échelle.
 
-La personne décide d'installer, au-dessus de la piscine, une grande voile d'ombrage
-qui se compose de deux parties détachables reliées par une fermeture éclair comme
-le montre le schéma ci-dessous qui n'est pas à l'échelle.
+
+\begin{multicols}{2}
+  \textbf{Données :}
+
+  \setlength\parindent{6mm}
+  \begin{itemize}
+    \item[$\bullet~~$]la première partie couvrant une partie de la piscine est représentée par le
+    triangle KLN ;
+    \item[$\bullet~~$]la deuxième partie est représentée par le trapèze LMON de bases [LN] et [MO] ;
+    \item[$\bullet~~$]la fermeture éclair est représentée par le segment [LN] ;
+    \item[$\bullet~~$]les poteaux : K, L et M sont alignés;
+    \item[$\bullet~~$]les poteaux : K, N et O sont alignés;
+    \item[$\bullet~~$]KL $= 5$ m ; LM $= 3,5$ m ; NO $= 5,25$ m ;\\ MO $= 10,2$ m et KN $= 7,5$ m.
+  \end{itemize}
+  \setlength\parindent{0mm}
+  
 
 \begin{center}
-\psset{unit=1cm}
+\psset{unit=0.7cm}
 \begin{pspicture}(12,9)
   \pspolygon[fillstyle=solid,fillcolor=lightgray](-0.2,4.5)(7.2,4.5)(7.9,5.5)(7.9,6.5)(7.2,7.9)(-0.2,7.9)
   \pspolygon[fillstyle=solid,fillcolor=white](0.5,0.5)(8.4,1)(1,8.5)
@@ -244,24 +263,9 @@ le montre le schéma ci-dessous qui n'est pas à l'échelle.
 \end{pspicture}
 \end{center}
 
-\textbf{Données :}
+\end{multicols}
 
-\smallskip
 
-\setlength\parindent{6mm}
-\begin{itemize}
-  \item[$\bullet~~$]la première partie couvrant une partie de la piscine est représentée par le
-  triangle KLN ;
-  \item[$\bullet~~$]la deuxième partie est représentée par le trapèze LMON de bases [LN] et [MO] ;
-  \item[$\bullet~~$]la fermeture éclair est représentée par le segment [LN] ;
-  \item[$\bullet~~$]les poteaux, soutenant la voile d'ombrage positionnés sur les points K, L et M, sont alignés;
-  \item[$\bullet~~$]les poteaux, soutenant la voile d'ombrage positionnés sur les points K, N et 0,
-  sont alignés;
-  \item[$\bullet~~$]KL $= 5$ m ; LM $= 3,5$ m ; NO $= 5,25$ m ; MO $= 10,2$ m.
-\end{itemize}
-\setlength\parindent{0mm}
-
-\smallskip
 
 \textbf{Questions :}
 
@@ -270,9 +274,7 @@ le montre le schéma ci-dessous qui n'est pas à l'échelle.
   \item[2.] Calculer la longueur de la fermeture éclair.
 \end{enumerate}
 
-\bigskip
 
-\newpage
 \subsection*{Exercice 5 - 19 points }
 
 On veut peindre des murs d'aire inférieure à 100 m$^2$.
@@ -297,7 +299,7 @@ Dans la suite de l'exercice, $x$ désigne l'aire des murs à peindre en m$^2$.
   \item Écrire, en fonction de $x$, le prix proposé par le peintre B.
 \end{enumerate}
 
-Les fonctions donnant les prix proposés par le peintre B et le peintre C sont représentées sur l'\textbf{annexe 1}.
+Les fonctions donnant les prix proposés par le peintre B et le peintre C sont représentées sur l'\textbf{ANNEXE page 6}.
 
 \begin{enumerate}[resume]
   \item Soient $A(x)$ et $C(x)$ les expressions des fonctions donnant le prix proposé par les peintres A et C en fonction de $x$.
@@ -307,23 +309,23 @@ On a $A(x) = \np{150}x$ et $C(x)= \np{7000}$.
 		\item Quelle est la nature de la fonction $A$ ?
 		\item Calculer l'image de $60$ par la fonction $A$.
 		\item Calculer l'antécédent de \np{3000} par la fonction $A$.
-		\item Tracer la représentation graphique de la fonction $A$ sur l'\textbf{annexe 1}.
+		\item Tracer la représentation graphique de la fonction $A$ sur l'\textbf{ANNEXE page 6}.
 	\end{enumerate}
 \item 
 	\begin{enumerate}
 		\item Résoudre l'équation $\np{150} x = \np{100} x + \np{1000}$. 
 		\item Interpréter le résultat de la question \textbf{4. a.}
 	\end{enumerate}
-\item Lire graphiquement, sur l'\textbf{annexe 1}, les surfaces entre lesquelles le peintre B est le moins cher des trois peintres.
+\item Lire graphiquement, sur l'\textbf{ANNEXE page 6}, les surfaces entre lesquelles le peintre B est le moins cher des trois peintres.
 \end{enumerate}
 
 \newpage
 
 \textbf{Nom, Prénom : } \dotfill
-\medskip
+\medskip \medskip
 
-\textbf{ANNEXE À RENDRE AVEC LA COPIE} \\
-\medskip
+\begin{center}\textbf{ANNEXE À RENDRE AVEC LA COPIE} \end{center}
+\medskip \medskip
 
 \psset{xunit=0.145cm,yunit=0.001cm}
 \begin{pspicture}(-5,-800)(90,10000)
@@ -332,14 +334,15 @@ On a $A(x) = \np{150}x$ et $C(x)= \np{7000}$.
   \psline[linewidth=1.5pt](0,1000)(90,10000)
   \psline[linewidth=1.5pt](0,7000)(90,7000)
 
+
   \uput[u](84,7000){Peintre C}
   \rput{36}(80,9400){Peintre B}
 
   \uput[d](82,-400){surface en m$^2$}
-  \uput[r](0,9800){tarif en €}
+  \uput[r](-5,10400){tarif en €}
 
-  \multido{\n=0+5}{19}{\psline[linewidth=0.7pt](\n,0)(\n,10000)} 
-  \multido{\n=0+1000}{11}{\psline[linewidth=0.7pt](0,\n)(90,\n)}
+  \multido{\n=0+5}{19}{\psline[linestyle=dotted](\n,0)(\n,10000)} 
+  \multido{\n=0+1000}{11}{\psline[linestyle=dotted](0,\n)(90,\n)}
 
 \end{pspicture}
 
