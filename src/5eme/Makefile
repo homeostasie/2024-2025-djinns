@@ -94,6 +94,11 @@ DM2:
 	pdflatex 5x5-equations/5x5-dm.tex
 	mv 5x5-dm.pdf '$(PDFDIR)'/5x5-dm.pdf
 
+5ie:
+	pdflatex 5x5-equations/5x5-ie.tex
+	pdflatex 5x5-equations/5x5-ie.tex
+	mv 5x5-ie.pdf '$(PDFDIR)'/5x5-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
