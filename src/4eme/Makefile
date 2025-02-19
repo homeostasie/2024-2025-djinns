@@ -108,6 +108,17 @@ sem1:
 	pdflatex 4x5-puissances/4x5-exo-2.tex
 	mv 4x5-exo-2.pdf '$(PDFDIR)'/4x5-exo-2.pdf
 
+5ie:
+	pdflatex 4x5-puissances/4x5-ie.tex
+	pdflatex 4x5-puissances/4x5-ie.tex
+	mv 4x5-ie.pdf '$(PDFDIR)'/4x5-ie.pdf
+
+5dm:
+	pdflatex 4xDM/4x3-DM.tex
+	pdflatex 4xDM/4x3-DM.tex
+	mv 4x3-DM.pdf '$(PDFDIR)'/4x3-DM.pdf
+
+
 6ie:
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
 	pdflatex 4x6-notation-scientifique/4x6-ie.tex
