@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 5x1-calcul-numerique/*.ipe 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-triangles-1-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe 5x20-angles-et-parallelisme/*.ipe)
+FIGSRC = $(wildcard 5x1-calcul-numerique/*.ipe 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe 5x20-angles-et-parallelisme/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -28,7 +28,7 @@ img: $(FIGOBJ)
 5x4-symetrie-centrale-1-quadrillage/%.pdf: 5x4-symetrie-centrale-1-quadrillage/%.ipe
 	ipetoipe -pdf $<
 
-5x6-triangles-1-angles/%.pdf: 5x6-triangles-1-angles/%.ipe
+5x6-angles/%.pdf: 5x6-angles/%.ipe
 	ipetoipe -pdf $<
 
 5x8-aires/%.pdf: 5x8-aires/%.ipe
@@ -98,6 +98,11 @@ DM2:
 	pdflatex 5x5-equations/5x5-ie.tex
 	pdflatex 5x5-equations/5x5-ie.tex
 	mv 5x5-ie.pdf '$(PDFDIR)'/5x5-ie.pdf
+
+6ie:
+	pdflatex 5x6-angles/5x6-ie.tex
+	pdflatex 5x6-angles/5x6-ie.tex
+	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf	
 
 # nettoyage		
 proper:
