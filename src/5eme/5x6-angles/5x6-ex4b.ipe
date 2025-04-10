@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20250409230920" modified="D:20250409233115"/>
+<info created="D:20250409230920" modified="D:20250410234254"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -361,10 +361,6 @@ h
 <text transformations="translations" pos="128 720" stroke="black" type="label" width="21.18" height="11.759" depth="0" valign="baseline" size="LARGE">37°</text>
 <text matrix="1 0 0 1 1.07984 -0.359946" transformations="translations" pos="97.1749 748.177" stroke="black" type="label" width="9.579" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">x</text>
 <path stroke="black">
-192 768 m
-336 768 l
-</path>
-<path stroke="black">
 224 768 m
 224 704 l
 </path>
@@ -378,18 +374,6 @@ h
 192 784 l
 </path>
 <path stroke="black">
-224 768 m
-192 752 l
-</path>
-<path stroke="black">
-224 768 m
-208 736 l
-</path>
-<path stroke="black">
-208 736 m
-192 704 l
-</path>
-<path stroke="black">
 240 768 m
 16 0 0 16 224 768 209.689 775.155 a
 </path>
@@ -397,23 +381,46 @@ h
 208 776 m
 17.8885 0 0 17.8885 224 768 224 750.111 a
 </path>
-<text transformations="translations" pos="248 784" stroke="black" type="label" width="8.837" height="7.41" depth="3.35" valign="baseline" size="LARGE">$y$</text>
+<text transformations="translations" pos="248 784" stroke="black" type="label" width="8.837" height="7.41" depth="3.35" valign="baseline" size="LARGE" style="math">y</text>
 <text matrix="1 0 0 1 -25.9411 14.0514" transformations="translations" pos="208 720" stroke="black" type="label" width="21.18" height="11.759" depth="0" valign="baseline" size="LARGE">35°</text>
 <path stroke="black">
-200.221 773.452 m
-211.3 771.02 l
+64 704 m
+64 720 l
+80 720 l
+80 704 l
+h
 </path>
 <path stroke="black">
-201.843 761.833 m
-210.76 764.805 l
+224 768 m
+288 768 l
 </path>
 <path stroke="black">
-206.977 748.592 m
-214.543 758.32 l
+224 768 m
+191.674 769.853 l
 </path>
 <path stroke="black">
-219.677 744.539 m
-221.298 756.158 l
+224 768 m
+192.506 755.293 l
+</path>
+<path stroke="black">
+224 768 m
+191.05 707.869 l
+</path>
+<path stroke="black">
+202.698 774.013 m
+213.306 770.685 l
+</path>
+<path stroke="black">
+201.242 764.237 m
+209.77 766.733 l
+</path>
+<path stroke="black">
+208.106 752.797 m
+213.93 759.245 l
+</path>
+<path stroke="black">
+218.714 745.309 m
+220.794 756.541 l
 </path>
 </page>
 </ipe>
