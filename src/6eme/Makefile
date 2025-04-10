@@ -79,6 +79,11 @@ DM1:
 	pdflatex 6x7-aires-perimetres/6x7-ie.tex
 	mv 6x7-ie.pdf '$(PDFDIR)'/6x7-ie.pdf
 
+8ie:
+	pdflatex 6x8-nombres-entiers/6x8-ie.tex
+	pdflatex 6x8-nombres-entiers/6x8-ie.tex
+	mv 6x8-ie.pdf '$(PDFDIR)'/6x8-ie.pdf
+
 8dm:
 	pdflatex 6x8-temps/6x8-dm.tex
 	pdflatex 6x8-temps/6x8-dm.tex
