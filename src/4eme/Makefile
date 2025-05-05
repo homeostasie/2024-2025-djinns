@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x3-triangles-semblables/*.ipe 4x1-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
+FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 4x1-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -33,6 +33,9 @@ img: $(FIGOBJ)
 	ipetoipe -pdf $<
 
 4xDM/%.pdf: 4xDM/%.ipe
+	ipetoipe -pdf $<
+
+4x7-triangles-semblables/%.pdf: 4x7-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
 1py:
@@ -125,10 +128,10 @@ sem1:
 	mv 4x6-ie.pdf '$(PDFDIR)'/4x6-ie-sci.pdf	
 
 
-7dm:
-	pdflatex 4x7-pythagore-1/4x7-dm.tex
-	pdflatex 4x7-pythagore-1/4x7-dm.tex
-	mv 4x7-dm.pdf '$(PDFDIR)'/4x7-dm-pytha.pdf	
+7ie:
+	pdflatex 4x7-triangles-semblables/4x7-ie.tex
+	pdflatex 4x7-triangles-semblables/4x7-ie.tex
+	mv 4x7-ie.pdf '$(PDFDIR)'/4x7-ie.pdf	
 
 
 14dm:
