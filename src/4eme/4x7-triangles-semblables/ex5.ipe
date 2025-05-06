@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20250505225404" modified="D:20250505232126"/>
+<info created="D:20250505225404" modified="D:20250507005343"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -332,10 +332,10 @@ h
 <text matrix="1 0 0 1 15.2432 -0.473382" transformations="translations" pos="240 816" stroke="black" type="label" width="13.794" height="14.116" depth="0" valign="baseline" size="huge">T</text>
 <text matrix="1 0 0 1 39.7641 -3.78705" transformations="translations" pos="352 768" stroke="black" type="label" width="14.326" height="14.116" depth="0" valign="baseline" size="huge">Y</text>
 <text matrix="1 0 0 1 62.4864 6.62734" transformations="translations" pos="95.7156 768.202" stroke="black" type="label" width="57.937" height="13.318" depth="4.02" valign="baseline" size="huge">50,5cm</text>
-<text matrix="1 0 0 1 -4.26043 -8.52087" transformations="translations" pos="157.255 736.012" stroke="black" type="label" width="57.937" height="13.319" depth="0" valign="baseline" size="huge">42.3cm</text>
+<text matrix="1 0 0 1 -4.26043 -8.52087" transformations="translations" pos="157.255 736.012" stroke="black" type="label" width="57.937" height="13.318" depth="4.02" valign="baseline" size="huge">42,3cm</text>
 <text matrix="1 0 0 1 7.10072 -9.94101" transformations="translations" pos="73.9401 766.782" stroke="black" type="label" width="43.302" height="13.319" depth="0" valign="baseline" size="huge">28cm</text>
 <text matrix="1 0 0 1 -14.2014 -1.42014" transformations="translations" pos="335.72 792.818" stroke="black" type="label" width="52.778" height="13.319" depth="0" valign="baseline" size="huge">135cm</text>
-<text transformations="translations" pos="323.412 736.012" stroke="black" type="label" width="11.515" height="8.896" depth="0" valign="baseline" size="huge">$u$</text>
-<text transformations="translations" pos="241.517 779.563" stroke="black" type="label" width="10.522" height="8.896" depth="0" valign="baseline" size="huge">$v$</text>
+<text transformations="translations" pos="323.412 736.012" stroke="black" type="label" width="11.515" height="8.896" depth="0" valign="baseline" size="huge" style="math">u</text>
+<text transformations="translations" pos="241.517 779.563" stroke="black" type="label" width="10.522" height="8.896" depth="0" valign="baseline" size="huge" style="math">v</text>
 </page>
 </ipe>

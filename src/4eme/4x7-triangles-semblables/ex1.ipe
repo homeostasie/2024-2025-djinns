@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20250505225404" modified="D:20250505225404"/>
+<info created="D:20250505225404" modified="D:20250507005224"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -372,13 +372,13 @@ h
 335.645 784 l
 h
 </path>
-<text matrix="1 0 0 1 72.9008 -16.5684" transformations="translations" pos="104.162 722.56" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">35°</text>
-<text matrix="1 0 0 1 65.8 -6.15396" transformations="translations" pos="148.66 703.625" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">62°</text>
+<text matrix="1 0 0 1 72.9008 -16.5684" transformations="translations" pos="104.162 722.56" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">34°</text>
+<text matrix="1 0 0 1 65.8 -6.15396" transformations="translations" pos="148.66 703.625" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">65°</text>
 <text matrix="1 0 0 1 76.2144 -0.946763" transformations="translations" pos="122.15 757.117" stroke="black" type="label" width="9.476" height="8.895" depth="0" valign="baseline" size="huge">a</text>
-<text transformations="translations" pos="277.419 765.638" stroke="black" type="label" width="39.956" height="14.112" depth="0" valign="baseline" size="huge">35.7°</text>
+<text transformations="translations" pos="277.419 765.638" stroke="black" type="label" width="39.956" height="14.111" depth="4.02" valign="baseline" size="huge">31,4°</text>
 <text transformations="translations" pos="336.119 711.199" stroke="black" type="label" width="10.556" height="14.349" depth="0" valign="baseline" size="huge">b</text>
 <text matrix="1 0 0 1 -24.1425 -11.8345" transformations="translations" pos="486.181 701.258" stroke="black" type="label" width="8.397" height="8.895" depth="0" valign="baseline" size="huge">c</text>
-<text matrix="1 0 0 1 -25.5626 -20.8288" transformations="translations" pos="438.843 765.164" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">63°</text>
+<text matrix="1 0 0 1 -25.5626 -20.8288" transformations="translations" pos="438.843 765.164" stroke="black" type="label" width="25.321" height="14.112" depth="0" valign="baseline" size="huge">77°</text>
 <path matrix="1 0 0 1 -24.1425 -11.8345" stroke="black">
 469.139 715.459 m
 481.447 707.412 l
