@@ -31,6 +31,9 @@ img: $(FIGOBJ)
 5x6-angles/%.pdf: 5x6-angles/%.ipe
 	ipetoipe -pdf $<
 
+5x7-arithmetique/%.pdf: 5x7-arithmetique/%.ipe
+	ipetoipe -pdf $<
+
 5x8-aires/%.pdf: 5x8-aires/%.ipe
 	ipetoipe -pdf $<
 
@@ -103,6 +106,12 @@ DM2:
 	pdflatex 5x6-angles/5x6-ie.tex
 	pdflatex 5x6-angles/5x6-ie.tex
 	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf	
+
+7ie:
+	pdflatex 5x7-arithmetique/5x7-ie.tex
+	pdflatex 5x7-arithmetique/5x7-ie.tex
+	mv 5x7-ie.pdf '$(PDFDIR)'/5x7-ie.pdf	
+
 
 # nettoyage		
 proper:
