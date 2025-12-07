@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20221214015425" modified="D:20241007231854"/>
+<info created="D:20221214015425" modified="D:20251124005209"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -324,7 +324,7 @@ h
 128 624 m
 256 624 l
 </path>
-<text transformations="translations" pos="176 608" stroke="black" type="label" width="62.985" height="16.934" depth="0" valign="baseline" size="Huge">Douve</text>
+<text transformations="translations" pos="176 608" stroke="black" type="label" width="71.892" height="16.934" depth="0" valign="baseline" size="Huge">Douves</text>
 <path stroke="black">
 256 768 m
 256 776 l
@@ -356,5 +356,8 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -16 0" transformations="translations" pos="144 720" stroke="black" type="label" width="68.625" height="14.115" depth="4.02" valign="baseline" size="huge">Grappin</text>
+<text transformations="translations" pos="112 640" stroke="black" type="label" width="18.002" height="16.934" depth="0" valign="baseline" size="Huge">G</text>
+<text transformations="translations" pos="240 768" stroke="black" type="label" width="16.548" height="16.934" depth="0" valign="baseline" size="Huge">T</text>
+<text transformations="translations" pos="264 648" stroke="black" type="label" width="17.514" height="16.934" depth="0" valign="baseline" size="Huge">D</text>
 </page>
 </ipe>
