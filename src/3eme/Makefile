@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 4x1-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
+FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 3x3-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,7 +22,7 @@ img: $(FIGOBJ)
 4x3-triangles-semblables/%.pdf: 4x3-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
-4x1-pythagore/%.pdf: 4x1-pythagore/%.ipe
+3x3-pythagore/%.pdf: 3x3-pythagore/%.ipe
 	ipetoipe -pdf $<
 
 
@@ -63,6 +63,11 @@ DM1:
 	pdflatex 3x1-calcul-litteral/3x1-ie.tex
 	mv 3x1-ie.pdf '$(PDFDIR)'/3x1-ie.pdf
 
+3ie:
+	pdflatex 3x3-pythagore/3x3-ie.tex
+	pdflatex 3x3-pythagore/3x3-ie.tex
+	mv 3x3-ie.pdf '$(PDFDIR)'/3x3-ie.pdf
+
 DM2:
 	pdflatex 4xDM/4x2-DM.tex
 	pdflatex 4xDM/4x2-DM.tex
@@ -81,11 +86,6 @@ DM2:
 	pdflatex 4x2-graphiques/4x2-data-temperature.tex
 	pdflatex 4x2-graphiques/4x2-data-temperature.tex
 	mv 4x2-data-temperature.pdf '$(PDFDIR)'/4x2-data-temperature.pdf
-
-3ie:
-	pdflatex 4x3-proportionnalite/4x3-ie.tex
-	pdflatex 4x3-proportionnalite/4x3-ie.tex
-	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie-prop.pdf
 
 4ie:
 	pdflatex 4x4-educfi/4x4-ie.tex
