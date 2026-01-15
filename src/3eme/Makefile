@@ -13,13 +13,13 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 3x3-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
+FIGSRC = $(wildcard 3x5-proba/*.ipe 4x3-triangles-semblables/*.ipe 3x3-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-4x3-triangles-semblables/%.pdf: 4x3-triangles-semblables/%.ipe
+3x5-proba/%.pdf: 3x5-proba/%.ipe
 	ipetoipe -pdf $<
 
 3x3-pythagore/%.pdf: 3x3-pythagore/%.ipe
@@ -73,10 +73,10 @@ DM2:
 	pdflatex 4xDM/4x2-DM.tex
 	mv 4x2-DM.pdf '$(PDFDIR)'/4x2-DM.pdf
 
-2ie:
-	pdflatex 4x2-nombres-relatifs/4x2-ie.tex
-	pdflatex 4x2-nombres-relatifs/4x2-ie.tex
-	mv 4x2-ie.pdf '$(PDFDIR)'/4x2-ie.pdf
+5ie:
+	pdflatex 3x5-proba/3x5-ie.tex
+	pdflatex 3x5-proba/3x5-ie.tex
+	mv 3x5-ie.pdf '$(PDFDIR)'/3x5-ie.pdf
 
 
 2data:
@@ -111,10 +111,7 @@ sem1:
 	pdflatex 4x5-puissances/4x5-exo-2.tex
 	mv 4x5-exo-2.pdf '$(PDFDIR)'/4x5-exo-2.pdf
 
-5ie:
-	pdflatex 4x5-puissances/4x5-ie.tex
-	pdflatex 4x5-puissances/4x5-ie.tex
-	mv 4x5-ie.pdf '$(PDFDIR)'/4x5-ie.pdf
+
 
 5dm:
 	pdflatex 4xDM/4x3-DM.tex
