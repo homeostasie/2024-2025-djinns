@@ -72,7 +72,7 @@
 - *Il vient une heure où protester ne suffit plus : après la philosophie, il faut l’action.*
 
 ### Michael Jordan
-- *If you do the work, you get rewarded. There are no shortcuts in life*
+- *If you do the work, you get rewarded. There are no shortcuts in life.*
 
 ### Stephen King
 

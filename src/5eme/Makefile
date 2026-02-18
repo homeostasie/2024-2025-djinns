@@ -112,6 +112,11 @@ DM2:
 	pdflatex 5x7-arithmetique/5x7-ie.tex
 	mv 5x7-ie.pdf '$(PDFDIR)'/5x7-ie.pdf	
 
+8ie:
+	pdflatex 5x8-calcul-litteral/5x8-ie.tex
+	pdflatex 5x8-calcul-litteral/5x8-ie.tex
+	mv 5x8-ie.pdf '$(PDFDIR)'/5x8-ie.pdf	
+
 
 # nettoyage		
 proper:

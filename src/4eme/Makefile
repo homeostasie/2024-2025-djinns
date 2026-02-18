@@ -133,6 +133,11 @@ sem1:
 	pdflatex 4x7-triangles-semblables/4x7-ie.tex
 	mv 4x7-ie.pdf '$(PDFDIR)'/4x7-ie.pdf	
 
+8ie:
+	pdflatex 4x8-fractions/4x8-ie.tex
+	pdflatex 4x8-fractions/4x8-ie.tex
+	mv 4x8-ie.pdf '$(PDFDIR)'/4x8-ie.pdf	
+
 
 14dm:
 	pdflatex 4x14-trigonometrie/4x14-dm.tex
