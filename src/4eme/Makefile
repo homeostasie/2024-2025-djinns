@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 4x1-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
+FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x3-triangles-semblables/*.ipe 4x1-carre/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,7 +22,7 @@ img: $(FIGOBJ)
 4x3-triangles-semblables/%.pdf: 4x3-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
-4x1-pythagore/%.pdf: 4x1-pythagore/%.ipe
+4x1-carre/%.pdf: 4x1-carre/%.ipe
 	ipetoipe -pdf $<
 
 
@@ -59,8 +59,8 @@ DM1:
 	mv 4x1-DM.pdf '$(PDFDIR)'/4x1-DM.pdf
 
 1ie:
-	pdflatex 4x1-pythagore/4x1-ie.tex
-	pdflatex 4x1-pythagore/4x1-ie.tex
+	pdflatex 4x1-carre/4x1-ie.tex
+	pdflatex 4x1-carre/4x1-ie.tex
 	mv 4x1-ie.pdf '$(PDFDIR)'/4x1-ie.pdf
 
 DM2:
@@ -138,6 +138,10 @@ sem1:
 	pdflatex 4x8-fractions/4x8-ie.tex
 	mv 4x8-ie.pdf '$(PDFDIR)'/4x8-ie.pdf	
 
+9ie:
+	pdflatex 4x9-equations/4x9-ie.tex
+	pdflatex 4x9-equations/4x9-ie.tex
+	mv 4x9-ie.pdf '$(PDFDIR)'/4x9-ie.pdf	
 
 14dm:
 	pdflatex 4x14-trigonometrie/4x14-dm.tex
