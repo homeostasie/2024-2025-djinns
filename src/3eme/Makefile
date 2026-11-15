@@ -78,6 +78,11 @@ DM2:
 	pdflatex 3x5-proba/3x5-ie.tex
 	mv 3x5-ie.pdf '$(PDFDIR)'/3x5-ie.pdf
 
+6ie:
+	pdflatex 3x6-equations/3x6-ie.tex
+	pdflatex 3x6-equations/3x6-ie.tex
+	mv 3x6-ie.pdf '$(PDFDIR)'/3x6-ie.pdf
+
 
 2data:
 	pdflatex 4x2-graphiques/4x2-data-perso.tex
@@ -117,12 +122,6 @@ sem1:
 	pdflatex 4xDM/4x3-DM.tex
 	pdflatex 4xDM/4x3-DM.tex
 	mv 4x3-DM.pdf '$(PDFDIR)'/4x3-DM.pdf
-
-
-6ie:
-	pdflatex 4x6-notation-scientifique/4x6-ie.tex
-	pdflatex 4x6-notation-scientifique/4x6-ie.tex
-	mv 4x6-ie.pdf '$(PDFDIR)'/4x6-ie-sci.pdf	
 
 
 7ie:
