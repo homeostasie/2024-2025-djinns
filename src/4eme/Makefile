@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x2-probabilites/*.ipe 4x1-carre/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
+FIGSRC = $(wildcard 4x7-triangles-semblables/*.ipe 4x2-probabilites/*.ipe 4x1-carre/*.ipe 4x3-pythagore/*.ipe 4xbb/*.ipe 4x14-trigonometrie/*.ipe 4xDM/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -28,8 +28,7 @@ img: $(FIGOBJ)
 4x2-probabilites/%.pdf: 4x2-probabilites/%.ipe
 	ipetoipe -pdf $<
 
-
-4x8-pythagore-2/%.pdf: 4x8-pythagore-2/%.ipe
+4x3-pythagore/%.pdf: 4x3-pythagore/%.ipe
 	ipetoipe -pdf $<
 
 4x14-trigonometrie/%.pdf: 4x14-trigonometrie/%.ipe
@@ -41,25 +40,37 @@ img: $(FIGOBJ)
 4x7-triangles-semblables/%.pdf: 4x7-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
-DM1:
-	pdflatex 4xDM/4x1-DM.tex
-	pdflatex 4xDM/4x1-DM.tex
-	mv 4x1-DM.pdf '$(PDFDIR)'/4x1-DM.pdf
 
 1ie:
 	pdflatex 4x1-carre/4x1-ie.tex
 	pdflatex 4x1-carre/4x1-ie.tex
 	mv 4x1-ie.pdf '$(PDFDIR)'/4x1-ie.pdf
 
-DM2:
-	pdflatex 4xDM/4x2-DM.tex
-	pdflatex 4xDM/4x2-DM.tex
-	mv 4x2-DM.pdf '$(PDFDIR)'/4x2-DM.pdf
-
 2ie:
 	pdflatex 4x2-probabilites/4x2-ie.tex
 	pdflatex 4x2-probabilites/4x2-ie.tex
 	mv 4x2-ie.pdf '$(PDFDIR)'/4x2-ie.pdf
+
+DM1:
+	pdflatex 4xDM/4x1-DM.tex
+	pdflatex 4xDM/4x1-DM.tex
+	mv 4x1-DM.pdf '$(PDFDIR)'/4x1-DM.pdf
+
+3conj:
+	pdflatex 4x3-pythagore/4x3-conj-eau-pythagore.tex
+	pdflatex 4x3-pythagore/4x3-conj-eau-pythagore.tex
+	mv 4x3-conj-eau-pythagore.pdf '$(PDFDIR)'/4x3-conj-eau-pythagore.pdf
+
+3ie:
+	pdflatex 4x3-pythagore/4x3-ie.tex
+	pdflatex 4x3-pythagore/4x3-ie.tex
+	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie.pdf
+
+culture:
+	pdflatex 4-culture/4-culture.tex
+	pdflatex 4-culture/4-culture.tex
+	mv 4-culture.pdf '$(PDFDIR)'/4-culture.pdf
+
 
 
 2data:
@@ -70,10 +81,10 @@ DM2:
 	pdflatex 4x2-graphiques/4x2-data-temperature.tex
 	mv 4x2-data-temperature.pdf '$(PDFDIR)'/4x2-data-temperature.pdf
 
-3ie:
-	pdflatex 4x3-proportionnalite/4x3-ie.tex
-	pdflatex 4x3-proportionnalite/4x3-ie.tex
-	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie-prop.pdf
+
+
+
+
 
 4ie:
 	pdflatex 4x4-educfi/4x4-ie.tex
