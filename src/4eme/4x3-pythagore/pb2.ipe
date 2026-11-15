@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.30">
-<info created="D:20261115174244" modified="D:20261115175017"/>
+<info created="D:20261115174244" modified="D:20261115182628"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -361,10 +361,6 @@ h
 <text transformations="translations" pos="320 704" stroke="black" type="label" width="11.936" height="11.761" depth="0" valign="baseline" size="LARGE">H</text>
 <text transformations="translations" pos="320 640" stroke="black" type="label" width="5.64" height="11.761" depth="0" valign="baseline" size="LARGE">I</text>
 <text transformations="translations" pos="320 576" stroke="black" type="label" width="8.117" height="11.761" depth="0" valign="baseline" size="LARGE">J</text>
-<use name="mark/box(sx)" pos="96 704" size="large" stroke="black"/>
-<use name="mark/box(sx)" pos="160 704" size="large" stroke="black"/>
-<use name="mark/box(sx)" pos="224 704" size="large" stroke="black"/>
-<use name="mark/circle(sx)" pos="288 704" size="large" stroke="black"/>
 <use name="mark/circle(sx)" pos="64 672" size="large" stroke="black"/>
 <use name="mark/circle(sx)" pos="320 672" size="large" stroke="black"/>
 <use name="mark/circle(sx)" pos="64 608" size="large" stroke="black"/>
@@ -426,6 +422,38 @@ h
 224 592 m
 232 608 l
 240 592 l
+</path>
+<path stroke="black">
+96 712 m
+96 696 l
+</path>
+<path stroke="black">
+104 712 m
+104 696 l
+</path>
+<path stroke="black">
+160 712 m
+160 696 l
+</path>
+<path stroke="black">
+168 712 m
+168 696 l
+</path>
+<path stroke="black">
+224 712 m
+224 696 l
+</path>
+<path stroke="black">
+232 712 m
+232 696 l
+</path>
+<path stroke="black">
+288 712 m
+288 696 l
+</path>
+<path stroke="black">
+296 712 m
+296 696 l
 </path>
 </page>
 </ipe>
