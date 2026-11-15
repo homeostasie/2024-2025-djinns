@@ -1,0 +1,163 @@
+\input{../doc-class-cours.tex}
+
+
+\begin{document}
+
+\subsection*{DM - Problème}
+
+\begin{minipage}{0.58\linewidth}
+Sur la figure ci-contre :
+
+\begin{itemize}[label=$\bullet~~$]
+\item ABCD est un carré de côté 9 cm; 
+\item les segments de même longueur sont codés.
+\end{itemize}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Le polygone IJKLMNOP est-il régulier, c'est-à-dire a-t-il
+tous ses côtés de même longueur ?
+
+\textbf{Justifier la réponse.}
+		\item Justifier que l’aire de la surface IJKLMNOP grisée sur
+la figure ci-contre est égale à 63~cm$^2$.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.38\linewidth}
+\psset{unit=0.8cm}
+\begin{pspicture}(0,-1)(5.8,5.8)
+%\psgrid
+\psframe(0.2,0.2)(5.6,5.6)
+\pspolygon[fillstyle=solid,fillcolor=lightgray](2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\def\dblv{\psline(-0.05,0.1)(-0.05,-0.1)\psline(0.05,0.1)(0.05,-0.1)}
+\rput(2.9,5.6){\dblv}\rput(1,5.6){\dblv}\rput(4.7,5.6){\dblv}
+\rput(2.9,0.2){\dblv}\rput(1,0.2){\dblv}\rput(4.7,0.2){\dblv}
+\def\dblh{\psline(-0.1,0.05)(0.1,0.05)\psline(-0.1,-0.05)(0.1,-0.05)}
+\rput(0.2,4.7){\dblh}\rput(0.2,2.9){\dblh}\rput(0.2,1.1){\dblh}
+\rput(5.6,4.7){\dblh}\rput(5.6,2.9){\dblh}\rput(5.6,1.1){\dblh}
+\uput[ul](0.2,5.6){A} \uput[ur](5.6,5.6){B} \uput[dr](5.6,0.2){C} \uput[dl](0.2,0.2){D}
+\uput[u](2,5.6){I} \uput[u](3.8,5.6){J} \uput[r](5.6,3.8){K} \uput[r](5.6,2){L}
+\uput[d](3.8,0.2){M} \uput[d](2,0.2){N} \uput[l](0.2,2){O} \uput[l](0.2,3.8){P}
+\end{pspicture}
+\end{minipage}
+
+\begin{minipage}{0.58\linewidth}
+\begin{enumerate}[start=2]
+\item Les diagonales du carré ABCD se coupent en S.
+
+\smallskip
+
+On a tracé le cercle de centre S et de diamètre 9 cm.
+	\begin{enumerate}
+		\item Déterminer l'aire du disque de centre S et de
+diamètre 9 cm.
+		\item Montrer que la différence entre l'aire du polygone
+IJKLMNOP et l'aire du disque représente moins de
+1\,\% de l’aire du disque.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.38\linewidth}
+\psset{unit=0.8cm}
+\begin{pspicture}(0,0)(5.8,5.8)
+%\psgrid
+\psframe(0.2,0.2)(5.6,5.6)
+\pspolygon(2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\pscircle[fillstyle=solid,fillcolor=lightgray](2.9,2.9){2.7}
+\def\dblv{\psline(-0.05,0.1)(-0.05,-0.1)\psline(0.05,0.1)(0.05,-0.1)}
+\rput(2.9,5.6){\dblv}\rput(1,5.6){\dblv}\rput(4.7,5.6){\dblv}
+\rput(2.9,0.2){\dblv}\rput(1,0.2){\dblv}\rput(4.7,0.2){\dblv}
+\def\dblh{\psline(-0.1,0.05)(0.1,0.05)\psline(-0.1,-0.05)(0.1,-0.05)}
+\rput(0.2,4.7){\dblh}\rput(0.2,2.9){\dblh}\rput(0.2,1.1){\dblh}
+\rput(5.6,4.7){\dblh}\rput(5.6,2.9){\dblh}\rput(5.6,1.1){\dblh}
+\uput[ul](0.2,5.6){A} \uput[ur](5.6,5.6){B} \uput[dr](5.6,0.2){C} \uput[dl](0.2,0.2){D}
+\uput[u](2,5.6){I} \uput[u](3.8,5.6){J} \uput[r](5.6,3.8){K} \uput[r](5.6,2){L}
+\uput[d](3.8,0.2){M} \uput[d](2,0.2){N} \uput[l](0.2,2){O} \uput[l](0.2,3.8){P}\uput[l](2.9,2.9){S}
+\psline[linestyle=dashed,linewidth=1.5pt](0.2,5.6)(5.6,0.2)
+\psline[linestyle=dashed,linewidth=1.5pt](5.6,5.6)(0.2,0.2)
+\pspolygon(2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\end{pspicture}
+\end{minipage}
+
+\vspace{1cm}
+\subsection*{DM - Problème}
+
+\begin{minipage}{0.58\linewidth}
+Sur la figure ci-contre :
+
+\begin{itemize}[label=$\bullet~~$]
+\item ABCD est un carré de côté 9 cm; 
+\item les segments de même longueur sont codés.
+\end{itemize}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Le polygone IJKLMNOP est-il régulier, c'est-à-dire a-t-il
+tous ses côtés de même longueur ?
+
+\textbf{Justifier la réponse.}
+		\item Justifier que l’aire de la surface IJKLMNOP grisée sur
+la figure ci-contre est égale à 63~cm$^2$.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.38\linewidth}
+\psset{unit=0.8cm}
+\begin{pspicture}(0,-1)(5.8,5.8)
+%\psgrid
+\psframe(0.2,0.2)(5.6,5.6)
+\pspolygon[fillstyle=solid,fillcolor=lightgray](2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\def\dblv{\psline(-0.05,0.1)(-0.05,-0.1)\psline(0.05,0.1)(0.05,-0.1)}
+\rput(2.9,5.6){\dblv}\rput(1,5.6){\dblv}\rput(4.7,5.6){\dblv}
+\rput(2.9,0.2){\dblv}\rput(1,0.2){\dblv}\rput(4.7,0.2){\dblv}
+\def\dblh{\psline(-0.1,0.05)(0.1,0.05)\psline(-0.1,-0.05)(0.1,-0.05)}
+\rput(0.2,4.7){\dblh}\rput(0.2,2.9){\dblh}\rput(0.2,1.1){\dblh}
+\rput(5.6,4.7){\dblh}\rput(5.6,2.9){\dblh}\rput(5.6,1.1){\dblh}
+\uput[ul](0.2,5.6){A} \uput[ur](5.6,5.6){B} \uput[dr](5.6,0.2){C} \uput[dl](0.2,0.2){D}
+\uput[u](2,5.6){I} \uput[u](3.8,5.6){J} \uput[r](5.6,3.8){K} \uput[r](5.6,2){L}
+\uput[d](3.8,0.2){M} \uput[d](2,0.2){N} \uput[l](0.2,2){O} \uput[l](0.2,3.8){P}
+\end{pspicture}
+\end{minipage}
+
+\begin{minipage}{0.58\linewidth}
+\begin{enumerate}[start=2]
+\item Les diagonales du carré ABCD se coupent en S.
+
+\smallskip
+
+On a tracé le cercle de centre S et de diamètre 9 cm.
+	\begin{enumerate}
+		\item Déterminer l'aire du disque de centre S et de
+diamètre 9 cm.
+		\item Montrer que la différence entre l'aire du polygone
+IJKLMNOP et l'aire du disque représente moins de
+1\,\% de l’aire du disque.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.38\linewidth}
+\psset{unit=0.8cm}
+\begin{pspicture}(0,0)(5.8,5.8)
+%\psgrid
+\psframe(0.2,0.2)(5.6,5.6)
+\pspolygon(2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\pscircle[fillstyle=solid,fillcolor=lightgray](2.9,2.9){2.7}
+\def\dblv{\psline(-0.05,0.1)(-0.05,-0.1)\psline(0.05,0.1)(0.05,-0.1)}
+\rput(2.9,5.6){\dblv}\rput(1,5.6){\dblv}\rput(4.7,5.6){\dblv}
+\rput(2.9,0.2){\dblv}\rput(1,0.2){\dblv}\rput(4.7,0.2){\dblv}
+\def\dblh{\psline(-0.1,0.05)(0.1,0.05)\psline(-0.1,-0.05)(0.1,-0.05)}
+\rput(0.2,4.7){\dblh}\rput(0.2,2.9){\dblh}\rput(0.2,1.1){\dblh}
+\rput(5.6,4.7){\dblh}\rput(5.6,2.9){\dblh}\rput(5.6,1.1){\dblh}
+\uput[ul](0.2,5.6){A} \uput[ur](5.6,5.6){B} \uput[dr](5.6,0.2){C} \uput[dl](0.2,0.2){D}
+\uput[u](2,5.6){I} \uput[u](3.8,5.6){J} \uput[r](5.6,3.8){K} \uput[r](5.6,2){L}
+\uput[d](3.8,0.2){M} \uput[d](2,0.2){N} \uput[l](0.2,2){O} \uput[l](0.2,3.8){P}\uput[l](2.9,2.9){S}
+\psline[linestyle=dashed,linewidth=1.5pt](0.2,5.6)(5.6,0.2)
+\psline[linestyle=dashed,linewidth=1.5pt](5.6,5.6)(0.2,0.2)
+\pspolygon(2,5.6)(3.8,5.6)(5.6,3.8)(5.6,2)(3.8,0.2)(2,0.2)(0.2,2)(0.2,3.8)%IJKLMNOP
+\end{pspicture}
+\end{minipage}
+
+\end{document}

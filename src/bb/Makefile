@@ -36,6 +36,19 @@ bbpro:
 	pdflatex bb2-2025-pro.tex
 	mv bb2-2025-pro.pdf '$(PDFDIR)'/bb2-2025-pro.pdf
 
+
+dm1:
+	latex dm-1.tex
+	dvips dm-1.dvi
+	ps2pdf dm-1.ps
+	mv dm-1.pdf '$(PDFDIR)'/dm-1.pdf
+
+
+sante:
+	pdflatex sante.tex
+	pdflatex sante.tex
+	mv sante.pdf '$(PDFDIR)'/sante.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
