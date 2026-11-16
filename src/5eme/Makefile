@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 5x1-calcul-numerique/*.ipe 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe 5x20-angles-et-parallelisme/*.ipe)
+FIGSRC = $(wildcard 5x1-calcul-numerique/*.ipe 5x3-triangles/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe 5x20-angles-et-parallelisme/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,7 +22,7 @@ img: $(FIGOBJ)
 5x1-calcul-numerique/%.pdf: 5x1-calcul-numerique/%.ipe
 	ipetoipe -pdf $<
 
-5x3-nombres-relatifs-1-intro/%.pdf: 5x3-nombres-relatifs-1-intro/%.ipe
+5x3-triangles/%.pdf: 5x3-triangles/%.ipe
 	ipetoipe -pdf $<
 
 5x4-symetrie-centrale-1-quadrillage/%.pdf: 5x4-symetrie-centrale-1-quadrillage/%.ipe
@@ -53,6 +53,11 @@ img: $(FIGOBJ)
 	pdflatex 5x1-calcul-numerique/5x1-ie.tex
 	mv 5x1-ie.pdf '$(PDFDIR)'/5x1-ie.pdf
 
+3ie:
+	pdflatex 5x3-triangles/5x3-ie.tex
+	pdflatex 5x3-triangles/5x3-ie.tex
+	mv 5x3-ie.pdf '$(PDFDIR)'/5x3-ie.pdf
+
 
 DM1:
 	pdflatex 5xDM/5x1-dm-apollo.tex
@@ -81,10 +86,7 @@ DM2:
 	mv 5x2-DM.pdf '$(PDFDIR)'/5x2-DM.pdf
 
 
-3ie:
-	pdflatex 5x3-tableau-proportionnel/5x3-ie.tex
-	pdflatex 5x3-tableau-proportionnel/5x3-ie.tex
-	mv 5x3-ie.pdf '$(PDFDIR)'/5x3-ie.pdf
+
 
 
 4ie:
